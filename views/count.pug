@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  head
+  link(rel="stylesheet", href="stylesheets/count_style.css")
+
+  script(src="javascripts/count.js")
+
+  #div(class="main")
+    h1 文字数カウントメモ
+    textarea(id="inputarea",name="main", cols="30", rows="10",onkeyup='count()')
+    
+    h6(id="counter") 0文字

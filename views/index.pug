@@ -1,0 +1,111 @@
+extends layout
+
+block content
+  head
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+  script(src="javascripts/hp.js")
+
+  #div(class="st_wrapper")
+    #div(class="st_header")
+      header(class="st_header")
+        #div(class="header_logo")
+          p H
+        #div(class="link")
+          a(href="#Profile") About
+          a(href="#works") Works
+
+    #div(class="main_back")
+      h1(id ="keyphra") 
+        span(style=" color: #0BC1AE") Keep
+        br
+        span(style="color: #F4F6F7") Creating
+
+      button(id="jump_to_pro") Start
+
+
+      h3(id="welcome")
+        span(style="color:#f4f6f7") welcome to 
+        span(style="color: #0bc1ae") m
+        span(style="color:#f4f6f7") y portfolio
+
+          
+  
+
+    
+    #div(class="contents")
+      
+
+      #div(class="Profile")
+        h2(id="Profile") About
+        img( id="my_logo" src="../images/ロゴ.png", alt="")
+        #div(class="about")
+          p(id="my_explain")
+            br
+            span(style="font-size:24px; color:#000; float:left") はす
+            span(style="float:left")
+              |PCが好きな高校生。小学一年生のときにPCを初めて触り興味を持つ。
+              br
+              |その後小学五年生のときにプログラミングに出会い学習を開始。
+              br
+              |自分の経験や考え方を共有することで誰かの支えや後押しができるようなコンテンツを作るために学習中。
+              br
+              |趣味はエレキギターを弾くこと
+
+
+      h3(id="used_tools") 使用経験のあるツール
+
+      ul(class="tools_logo")
+        li(id="vim")
+        li(id="github")
+        li(id="code")
+        li(id="nodejs")
+        br
+        li(id="etc") etc...
+      section(id="category_work")        
+        h2(id="works") 作品
+        
+        #div(class="pjlayout")
+          a(class="project" href="/timer") 
+            #div(class="timer")
+            #div(class="Details")
+              h3 ポモドーロタイマー
+              #div(class="pjlayout")
+                p(class="tag") HTML
+                p(class="tag") CSS
+                p(class="tag") JavaScript
+                p(class="tag") プログラミング
+
+          a(class="project" href="/count")
+            #div(class="count")
+            #div(class="Details")
+              h3 文字数カウント
+              #div(class="pjlayout")
+                p(class="tag") HTML
+                p(class="tag") CSS
+                p(class="tag") JavaScript
+                p(class="tag") プログラミング
+
+          a(class="project" href="https://qiita.com/7321hasu/items/8b59f25638b60f4e336c")
+            img(class="qiita" src="../images/qiita_logo.png", alt="")
+            #div(class="Details")
+              h3 私のN高でのプログラミング学習のお話
+              #div(class="pjlayout")
+                p(class="tag") 思考
+                p(class="tag") プログラミング
+
+          a(class="project" href="https://qiita.com/7321hasu/items/eb9cd75515c55335d8fa")
+            img(class="qiita" src="../images/timer.png")
+            #div(class="Details")
+              h3 タイマーアプリを作ってみた
+              #div(class="pjlayout")
+                p(class="tag") JavaScript
+                p(class="tag") プログラミング
+
+    footer
+      #div(class="twitter")
+        a(href="https://twitter.com/8ZynzXnJl51KfRM")
+          svg(aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512')
+            path(fill='currentColor' d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z')
+
+              
+

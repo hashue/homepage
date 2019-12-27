@@ -1,0 +1,689 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{  
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.st_wrapper{
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+footer{
+  clear: both;
+  background-color: #000;
+  width: 100%;
+  height: 120px;
+}
+
+
+.contents{
+  color: #000;
+}
+
+.header_logo{
+  background-color: #e6371f;
+  float: left;
+  position: fixed;
+}
+
+.st_header{
+  background-color: #000;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.header_logo>p{
+  color: #F4F6F7;
+  text-align:center;
+  font-weight: bold;
+}
+
+.link{
+  width: 100%;
+}
+
+.link>a{
+  color:#fff;
+  text-decoration: none;
+}
+
+.main_back{
+  background: #000000 0% 0% no-repeat padding-box;
+  width: 100%;
+  position: relative;
+}
+
+#welcome{
+  font-family: 'Meirio',sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Profile{
+  font-family: 'Meirio',sans-serif;
+}
+
+.Profile{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.about{
+  border: solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#keyphra{
+  font-family: 'Meirio',sans-serif;
+  letter-spacing: 0;
+  color: #F4F6F7;
+}
+
+h2{
+  font-family: 'Meirio', cursive;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.tag_btn{
+  
+  display: block;
+  position: relative;
+  width: calc(50% - (12px * 2));
+  margin: auto;
+}
+
+#vim{
+ background-size: cover;
+  background-image: url('../images/vim-logo.png');
+}
+#github{
+  background-size: cover;
+  background-image: url('../images/octocat.png');
+}
+#code{
+  margin-right: 8px;
+  background-size: cover;
+  background-image: url('../images/code_logo.png');
+}
+
+#nodejs{
+  padding-left: 7px;
+  background-size: cover;
+  background-image: url('../images/node_logo.png');
+}
+#etc{
+  font-size: 25px;
+}
+
+#my_explain{
+  font-family: 'Meirio',sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 1199px){
+  .st_header{
+    min-width: 100%;
+    height: 80px;
+    z-index: 1;
+  }
+
+  .header_logo{
+    margin-left: 4%;
+    width:  65px;
+    height: 60px;
+    
+  }
+
+  .header_logo>p{
+    font-size: 35px;
+    padding: 10px 0px;
+  }
+  
+  .link{
+    margin-left: 60%;
+    margin-right:30px;
+    margin-top: 4%;
+    position: fixed;
+  }
+  
+  .link>a{
+    padding: 4px .8em;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .main_back{
+    min-width: 100%;
+    height: 440px;
+    position: relative;
+  }
+
+  #jump_to_pro{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    border-radius: 10px;
+    position: absolute;
+    left: 38%;
+    cursor: pointer;
+    margin-right: 200px;
+    margin-top: 2px;
+
+  }
+
+  #keyphra{
+    min-width: 100%;
+    padding-top: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 40px;
+    text-align: center;
+
+    font-family:'Meiryo',sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+    position: relative;
+  }
+
+  #keyphra.isnt-show{
+    opacity: 0;
+  }
+
+  #welcome{
+    min-width: 100%;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    top: 50%;
+    transition: 1.5s;
+    position: absolute;
+  }
+
+  #welcome.is-show {
+    opacity: 1;
+}
+  
+  #Profile{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+
+  #my_logo{
+    border: double 5px rgb(231, 165, 104);
+    border-radius: 50%;
+    width:  90px;
+    height: 90px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    float:left;
+    background-size: cover;
+  }
+  
+  #my_explain{
+    overflow: hidden;
+    font-size: 15px;
+    padding-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  .about{
+    text-align: left;
+  }
+
+  .Profile{
+    width: 80%;
+  }
+  
+  #used_tools{
+    text-align: center;
+    font-size: 30px;
+    margin-top:15%;
+    margin-bottom: 40px;
+  }
+
+  .tools_logo{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+
+  #vim,#github,#code{
+    width: 60px;
+    height: 60px;
+  }
+
+  #nodejs{
+    width: 130px;
+    height: 60px;
+  }
+
+  .timer,.count,.qiita{
+    width: 300px;
+    height: 150px;
+  }
+
+  .tools_logo{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  
+  li{
+    display: inline-block;
+  }
+
+  #category_work{
+    padding: 5vh 16px;
+    margin: auto;
+    max-width: 780px;
+    min-height: 30vh;
+    clear: both;
+    overflow: auto;
+  }
+
+  #works{
+    margin-bottom: 60px;
+  }
+  .timer{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../images/timer_sub.png');
+  }
+  
+  .count{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-image: url('../images/coming\ soon.png');
+  }
+  
+  .qiita{ 
+    width: 100%;
+    height: 200px;
+  
+    object-fit: cover;
+  }
+  
+  
+  .pjlayout{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project{
+    border-radius: 4px;
+    background-color:
+    #fff;
+    box-shadow: 0px 5px 16px
+    #e0eded;
+    display: block;
+    margin: 18px 12px;
+    float: left;
+    position: relative;
+    width: calc(50% - (12px * 2));
+    
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  @media screen and (max-width: 800px){
+    .project{
+      width: calc(100% - (6px * 2));
+    }
+  }
+  
+
+  .Details{
+    padding: 0px 24px 24px 24px;
+    color: #393c5d;
+    box-sizing: border-box;
+  }
+  
+  .tag{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(0, 159, 187);
+    margin:2px;
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+  .pjlayout h3{
+    margin:.6em 0;
+  }
+
+  .twitter{
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+
+  .twitter,.twitter>a>svg{
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+  }  
+}
+
+  
+
+
+  
+/*PC設定*/
+@media screen and (min-width: 1200px) {
+
+
+
+.header_logo{
+  margin-left: 120px;
+  width:  90px;
+  height: 80px;
+}
+
+
+
+
+header{
+  height: 100px;
+}
+
+.header_logo>p{
+  font-size: 45px;
+  padding: 10px;
+}
+
+.link{
+  margin-left:70%;
+  margin-top: 1.5%;
+}
+
+.link>a{
+  padding: 4px .8em;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.main_back{
+  margin-bottom: 20%;
+  width: 100%;
+  height: 760px;
+  position: relative;
+}
+
+#jump_to_pro{
+  width: 13rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: .1em;
+  border: none;
+  box-shadow: 0px 16px 15px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 15px;
+  margin-left: 10rem;
+  margin-right: 4rem;
+  margin-top: 10em;
+  top: 20px;
+}
+
+#jump_to_pro:hover {
+  background-image: linear-gradient(to right, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  box-shadow: 0px 15px 20px #30c7ec;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#Profile{
+  margin-bottom: 10%;
+  font-size: 50px;
+}
+
+.Profile{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 20px;
+}
+
+#my_explain{
+  font-size: 1rem;
+  overflow: auto;
+  padding: 12px 30px;
+  margin-bottom: 15px;
+}
+
+.about{
+  width: 70%;
+  margin-bottom: 4%;
+  padding:12px 4px;
+}
+
+
+
+#keyphra{
+  padding-top: 200px;
+  padding-bottom: 50px;
+  margin-right: 260px;
+  font-weight: bold;
+  font-style:italic ;
+  font-size: 7rem;
+  text-align: center;
+  float: right;
+  transition: .5s;
+  position: relative;
+}
+
+ #keyphra.isnt-show{
+   opacity: 0;
+ }
+
+  #welcome{
+    font-size: 3rem;
+    bottom: 13rem;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: 1.5s;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+  }
+
+  #welcome.is-show {
+    opacity: 1;
+}
+
+  h2{
+  font-size: 64px;
+}
+
+.tag_btn{
+  padding: 20px 0px;  
+}
+
+
+
+
+.explain{
+  padding-top: 30px;
+
+}
+
+#my_logo{
+  border: double 5px rgb(231, 165, 104);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 150px;
+  margin-top: 5rem;
+  margin-bottom: 20px;
+  background-size: cover;
+  float: left;
+}
+
+
+#used_tools{
+  text-align: center;
+  font-size: 50px;
+}
+
+.tools_logo{
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+li{
+  display: inline-block;
+}
+
+#vim{
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url('../images/vim-logo.png');
+}
+#github{
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url('../images/octocat.png');
+}
+#code{
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+  background-size: cover;
+  background-image: url('../images/code_logo.png');
+}
+
+#nodejs{
+  width: 200px;
+  height: 80px;
+  padding-left: 7px;
+  background-size: cover;
+  background-image: url('../images/node_logo.png');
+}
+#etc{
+  font-size: 25px;
+}
+
+#category_work{
+  padding: 5vh 16px;
+  margin: auto;
+  max-width: 780px;
+  min-height: 30vh;
+  clear: both;
+  overflow: auto;
+}
+
+
+#works{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.timer{
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url('../images/timer_sub.png');
+}
+
+.count{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-image: url('../images/coming\ soon.png');
+}
+
+.qiita{
+  width: 366px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.pjlayout{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 770px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project{
+  border-radius: 4px;
+  background-color:#fff;
+  box-shadow: 0px 5px 16px #e0eded;
+  display: block;
+  margin: 18px 12px;
+  float: left;
+  position: relative;
+  width: calc(50% - (12px * 2));
+  text-decoration: none;
+}
+
+.Details{
+  padding: 0px 20px 20px 20px;
+  color: #393c5d;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.tag{
+  color: #fff;
+  font-weight: normal;
+  background-color: rgb(0, 159, 187);
+  margin:2px;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.pjlayout h3{
+  margin:.8em 0;
+}
+
+  .twitter>a>svg{
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  float: right;
+  margin-top: 40px;
+  margin-right: 10%;
+
+    }
+
+
+
+  }
+
+ 

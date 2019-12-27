@@ -1,0 +1,28 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "core-js": "^3.6.0",
+    "express": "~4.16.0",
+    "helmet": "^3.21.2",
+    "http-errors": "^1.6.2",
+    "jquery": "^3.4.1",
+    "morgan": "~1.9.0",
+    "npm-check-updates": "^4.0.1",
+    "pug": "^2.0.4"
+  },
+  "description": "ポートフォリオ",
+  "main": "index.js",
+  "repository": "git@github.com:haplus-stu/Portfolio.git",
+  "author": "Hasu <syu8.0324@outlook.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "helmet": "^3.21.2"
+  }
+}

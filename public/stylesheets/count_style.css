@@ -1,0 +1,24 @@
+*{
+  margin: 0px;
+}
+
+.main{
+  margin: auto;
+  max-width: 770px;
+  overflow: auto;
+}
+
+h1{
+  padding: 40px 0;
+
+}
+
+#inputarea{
+  width: 98%;
+  height: 500px;
+  border: solid 5px gray;
+}
+
+#counter{
+  font-size: 20px;
+}
