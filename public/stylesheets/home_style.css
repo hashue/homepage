@@ -256,7 +256,7 @@ h2{
     width: 80%;
   }
   
-  #used_tools{
+  #used_tools,#qualification{
     text-align: center;
     font-size: 30px;
     margin-top:15%;
@@ -267,6 +267,10 @@ h2{
     list-style-type: none;
     text-align: center;
     padding-bottom: 70px;
+  }
+
+  .qualification{
+    text-align:center;
   }
 
   #vim,#github,#code{
@@ -548,8 +552,13 @@ header{
   float: left;
 }
 
+.qualification{
+  text-align:center;
+  font-size:1.4em;
+  margin-bottom:70px;
+}
 
-#used_tools{
+#used_tools,#qualification{
   text-align: center;
   font-size: 50px;
 }
