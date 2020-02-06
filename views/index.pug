@@ -6,28 +6,22 @@ block content
   script(src="javascripts/hp.js")
 
   #div(class="st_wrapper")
-    #div(class="st_header")
-      header(class="st_header")
-        #div(class="header_logo")
-          p H
-        #div(class="link")
-          a(href="#Profile") About
-          a(href="#works") Works
+    #div(class="back_main")
+      img(src="../images/back02.jpg", alt="")
+      div(class="nav_container")
+        ul(class="l_nav")
+          li(class="nav_item") 
+            a(href="#Profile")
+              |About
+          li(class="nav_item") 
+            a(href="#works") 
+              |Works
 
-    #div(class="main_back")
-      h1(id ="keyphra") 
-        span(style=" color: #0BC1AE") Keep
-        br
-        span(style="color: #F4F6F7") Creating
-
-      button(id="jump_to_pro") Start
-
-
-      h3(id="welcome")
-        span(style="color:#f4f6f7") welcome to 
-        span(style="color: #0bc1ae") m
-        span(style="color:#f4f6f7") y portfolio
-
+      #div(class="phrase")
+        h1(id ="keyphra")
+          |KEEP  CREATING
+        //-button(id="jump_to_pro") Start
+        h3(id="welcome") welcome to my portfolio
           
   
 
@@ -37,19 +31,19 @@ block content
 
       #div(class="Profile")
         h2(id="Profile") About
-        img( id="my_logo" src="../images/ロゴ.png", alt="")
         #div(class="about")
+          img( id="my_logo" src="../images/ロゴ.png", alt="")
           p(id="my_explain")
             br
             span(style="font-size:24px; color:#000; float:left") はす
-            span(style="float:left")
+            span(style="float:left; font-size:18px")
               |PCが好きな高校生。小学一年生のときにPCを初めて触り興味を持つ。
               br
               |その後小学五年生のときにプログラミングに出会い学習を開始。
               br
               |自分の経験や考え方を共有することで誰かの支えや後押しができるようなコンテンツを作るために学習中。
               br
-              |趣味はエレキギターを弾くこと
+              |趣味はエレキギターを弾くこと。
 
       h3(id="qualification") 資格
       ul(class="qualification")
@@ -78,7 +72,7 @@ block content
                 p(class="tag") JavaScript
                 p(class="tag") プログラミング
 
-          a(class="project" href="/count")
+          a(class="project" href="https://github.com/haplus-stu/count_extension")
             #div(class="count")
             #div(class="Details")
               h3 文字数カウント
@@ -86,6 +80,7 @@ block content
                 p(class="tag") HTML
                 p(class="tag") CSS
                 p(class="tag") JavaScript
+                 p(class="tag") 拡張機能               
                 p(class="tag") プログラミング
 
           a(class="project" href="https://qiita.com/7321hasu/items/8b59f25638b60f4e336c")
