@@ -197,65 +197,45 @@ h2{
   }
 
   .back_main{
-    min-width: 100%;
-    height: 440px;
+    width: 100%;
     position: relative;
   }
 
-  .back_main>.phrase{
+  .back_main img{
+    width: 100%;
+  }
+
+  .back_main .phrase{
     position: absolute;
     color: #F4F6F7;
     top: 0;
     left: 0;
   }
 
-  #jump_to_pro{
-    width: 8rem;
-    height: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    border: none;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to right, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-    border-radius: 10px;
-    position: absolute;
-    left: 38%;
-    cursor: pointer;
-    margin-right: 200px;
-    margin-top: 2px;
-
+  .phrase{
+    height: 150%;
+    width: 100%;
   }
 
   #keyphra{
-    position: absolute;
-    min-width: 100%;  
-    padding-top: 10%;
+    margin-top: 5%;
     text-align: center;
-    font-size: 3rem;
-    position: relative;
+    font-weight: lighter;
+    font-size: .5rem;
     top: 0;
     left: 0;
   }
 
-  #keyphra.isnt-show{
-    opacity: 0;
-  }
+
 
   #welcome{
-    min-width: 100%;
     font-size: 1.2rem;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
     top: 50%;
-    transition: 1.5s;
-    position: absolute;
+    width: 100%;
+    text-align: center;
   }
 
-  #welcome.is-show {
-    opacity: 1;
-}
+
   
   #Profile{
     margin-top: 80px;
@@ -474,9 +454,7 @@ header{
   width: 100%;
 }
 
-.back_mainimg{
-  width: 100%;
-}
+
 
 .nav_container{
   width: 100%;
@@ -525,40 +503,6 @@ a{
   height: 2px;
   bottom: 0;
 }
-}
-
-.main_back{
-  top:0;
-  margin-bottom: 20%;
-  width: 100%;
-  height: 760px;
-  position: relative;
-}
-
-#jump_to_pro{
-  width: 13rem;
-  height: 4rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: .1em;
-  border: none;
-  box-shadow: 0px 16px 15px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  border-radius: 15px;
-  margin-left: 10rem;
-  margin-right: 4rem;
-  margin-top: 10em;
-  top: 20px;
-}
-
-#jump_to_pro:hover {
-  background-image: linear-gradient(to right, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-  box-shadow: 0px 15px 20px #30c7ec;
-  color: #fff;
-  transform: translateY(-7px);
 }
 
 .phrase{
@@ -787,6 +731,6 @@ li{
 
 
 
-  }
+
 
  
