@@ -7,7 +7,7 @@
 body{  
   font-size: 16px;
     font-family: "Noto Sans JP", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, メイリオ, Meiryo, sans-serif;
-  }
+}
 
 .st_wrapper{
   width: 100%;
@@ -27,24 +27,6 @@ footer{
   color: #000;
 }
 
-.header_logo{
-  background-color: #e6371f;
-  float: left;
-  position: fixed;
-}
-
-.st_header{
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-.header_logo>p{
-  color: #F4F6F7;
-  text-align:center;
-  font-weight: bold;
-}
-
 .nav_container{
   width: 100%;
   position: absolute;
@@ -59,8 +41,6 @@ footer{
   align-items: center;
   justify-content: flex-end;
 }
-
-
 
 .nav_container .l_nav .nav_item{
   display: inline-block;
@@ -80,7 +60,7 @@ a{
   overflow: hidden;
   font-weight: 500;
   line-height: 1;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .nav_container .l_nav .nav_item>a::after{
@@ -91,21 +71,13 @@ a{
   bottom: 0;
 }
 
-.main_back{
-  width: 100%;
-  position: relative;
-}
 
 #welcome{
-  font-family: 'Meirio',sans-serif;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-#Profile{
-  font-family: 'Meirio',sans-serif;
-}
 
 .Profile{
   text-align: center;
@@ -121,7 +93,6 @@ a{
 }
 
 h2{
-  font-family: 'Meirio', cursive;
   text-align: center;
   margin-top: 0px;
 }
@@ -157,44 +128,11 @@ h2{
   font-size: 25px;
 }
 
-#my_explain{
-  font-family: 'Meirio',sans-serif;
-}
 
 
 
 
 @media screen and (max-width: 1199px){
-  .st_header{
-    min-width: 100%;
-    height: 80px;
-    z-index: 1;
-  }
-
-  .header_logo{
-    margin-left: 4%;
-    width:  65px;
-    height: 60px;
-    
-  }
-
-  .header_logo>p{
-    font-size: 35px;
-    padding: 10px 0px;
-  }
-  
-  .link{
-    margin-left: 60%;
-    margin-right:30px;
-    margin-top: 4%;
-    position: fixed;
-  }
-  
-  .link>a{
-    padding: 4px .8em;
-    font-size: 1rem;
-    font-weight: bold;
-  }
 
   .back_main{
     width: 100%;
@@ -219,21 +157,20 @@ h2{
   }
 
 
-
   #keyphra{
-    margin-top: 20%;
+    margin-top: 15%;
     text-align: center;
     font-weight: lighter;
-    letter-spacing: .4rem;
-    font-size: 2rem;
+    letter-spacing: .8rem;
+    font-size: 1rem;
   }
 
 
   #welcome{
-    font-size: 1rem;
+    font-size: .5rem;
     top: 50%;
     width: 100%;
-    letter-spacing: .2rem;
+    letter-spacing: .4rem;
     text-align: center;
   }
 
@@ -258,7 +195,7 @@ h2{
   }
   
   #my_explain{
-    overflow: hidden;
+    overflow: auto;
     font-size: 15px;
     padding-right: 8px;
     margin-bottom: 10px;
@@ -343,7 +280,6 @@ h2{
   .qiita{ 
     width: 100%;
     height: 200px;
-  
     object-fit: cover;
   }
   
@@ -354,19 +290,16 @@ h2{
   }
   
   .project{
-    border-radius: 4px;
-    background-color:
-    #fff;
-    box-shadow: 0px 5px 16px
-    #e0eded;
-    display: block;
-    margin: 18px 12px;
     float: left;
-    position: relative;
-    width: calc(50% - (12px * 2));
-    
-    text-decoration: none;
+    display: block;
     transition: .3s;
+    margin: 18px 12px;
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+    background-color:#fff;
+    width: calc(50% - (12px * 2)); 
+    box-shadow: 0px 5px 16px #e0eded;
   }
   
   @media screen and (max-width: 800px){
@@ -377,19 +310,19 @@ h2{
   
 
   .Details{
-    padding: 0px 24px 24px 24px;
     color: #393c5d;
     box-sizing: border-box;
+    padding: 0px 24px 24px 24px;
   }
   
   .tag{
+    margin:2px;
     color: #fff;
     font-size: 12px;
-    font-weight: bold;
-    background-color: rgb(0, 159, 187);
-    margin:2px;
     padding: 2px 8px;
+    font-weight: bold;
     border-radius: 3px;
+    background-color: rgb(0, 159, 187);
   }
   .pjlayout h3{
     margin:.6em 0;
@@ -402,9 +335,9 @@ h2{
   }
 
   .twitter,.twitter>a>svg{
-    color: #fff;
     width: 24px;
     height: 24px;
+    color: #fff;
     background-size: cover;
   }  
 }
@@ -416,53 +349,32 @@ h2{
 /*PC設定*/
 @media screen and (min-width: 1200px) {
 
-.st_header{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+h2{
+  font-size: 40px;
 }
 
-.header_logo{
-  margin-left: 120px;
-  width:  90px;
-  height: 80px;
-}
-
-
-
-
-header{
-  height: 100px;
-}
-
-.header_logo>p{
-  font-size: 45px;
-  padding: 10px;
-}
 .back_main{
-  position: relative;
   width: 100%;
+  position: relative;
 }
+
 .back_main .phrase{
-  position: absolute;
-  color: #F4F6F7;
   top: 0;
   left: 0;
+  color: #F4F6F7;
+  position: absolute;
 }
 
 .back_main img{
   width: 100%;
 }
 
-
-
 .nav_container{
-  width: 100%;
-  position: absolute;
-  z-index: 1;
   top: 0;
   right: 0;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
 }
 
 .nav_container .l_nav{
@@ -473,13 +385,10 @@ header{
   justify-content: flex-end;
 }
 
-
-
 .nav_container .l_nav .nav_item{
-  display: inline-block;
   margin: 3%;
+  display: inline-block;
   text-decoration: none;
-  
 }
 
 a{
@@ -510,44 +419,13 @@ a{
   width: 100%;
 }
 
-#Profile{
-  margin-top: 10%;
-  margin-bottom: 10%;
-  font-size: 50px;
-}
-
-.Profile{
-  padding-top: 30px;
-  padding-bottom: 60px;
-  font-size: 20px;
-}
-
-#my_explain{
-  overflow: auto;
-  padding: 12px 30px;
-  margin-bottom: 15px;
-}
-
-.about{
-  width: 70%;
-  margin-bottom: 4%;
-  padding:12px 4px;
-}
-
-
-
 #keyphra{
   margin-top: 15%;
-
   font-size: 4rem;
   letter-spacing: 1rem;
   text-align: center;
   font-weight: lighter;
 }
-
- #keyphra.isnt-show{
-   opacity: 0;
- }
 
   #welcome{
     font-size: 1.4rem;
@@ -558,20 +436,33 @@ a{
     text-align: center;
   }
 
-  #welcome.is-show {
-    opacity: 1;
+#Profile{
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
-  h2{
-  font-size: 64px;
+.Profile{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 20px;
 }
+
+.about{
+  width: 70%;
+  margin-bottom: 4%;
+  padding:12px 4px;
+}
+
+#my_explain{
+  overflow: auto;
+  padding: 12px 30px;
+  margin-bottom: 15px;
+}
+
 
 .tag_btn{
   padding: 20px 0px;  
 }
-
-
-
 
 .explain{
   padding-top: 30px;
@@ -583,9 +474,7 @@ a{
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin-left: 2em;
-  margin-top: 5rem;
-  margin-bottom: 20px;
+  margin: 5rem 0 20px 2em;
   background-size: cover;
   float: left;
 }
@@ -598,7 +487,6 @@ a{
 
 #used_tools,#qualification{
   text-align: center;
-  font-size: 50px;
 }
 
 .tools_logo{
@@ -654,7 +542,6 @@ li{
 
 #works{
   text-align: center;
-  font-size: 40px;
   margin-bottom: 70px;
 }
 
