@@ -218,10 +218,11 @@ h2{
   }
 
   #keyphra{
-    margin-top: 5%;
+    margin-top: 15%;
     text-align: center;
     font-weight: lighter;
-    font-size: .5rem;
+    letter-spacing: .4rem;
+    font-size: 2rem;
     top: 0;
     left: 0;
   }
@@ -229,9 +230,10 @@ h2{
 
 
   #welcome{
-    font-size: 1.2rem;
+    font-size: 1rem;
     top: 50%;
     width: 100%;
+    letter-spacing: .2rem;
     text-align: center;
   }
 
@@ -251,7 +253,7 @@ h2{
     margin-left: 24px;
     margin-right: 24px;
     margin-top: 50px;
-    margin-bottom: 10px;
+    overflow: auto;
     float:left;
     background-size: cover;
   }
@@ -503,7 +505,6 @@ a{
   height: 2px;
   bottom: 0;
 }
-}
 
 .phrase{
   height: 150%;
@@ -538,7 +539,7 @@ a{
 
 #keyphra{
   margin-top: 15%;
-  
+
   font-size: 4rem;
   letter-spacing: 1rem;
   text-align: center;
