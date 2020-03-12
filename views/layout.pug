@@ -1,8 +1,16 @@
 doctype html
-html
+html (lang = "ja" prefix="og: http://ogp.me/ns#")
   head
     title= title
     link(rel='stylesheet', href='stylesheets/home_style.css')
     meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0')
+    meta(property="og:title" content="はす")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://hasu-83.herokuapp.com/")
+    meta(property="og:image" content="http://hasu-83.herokuapp.com/images/%E3%83%AD%E3%82%B4.png")
+    meta(property="og:site_name" content="はす")
+    meta(property="og:description" content="はすのポートフォリオサイト")
+
+
   body
     block content
