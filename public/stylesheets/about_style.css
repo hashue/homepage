@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{  
+      font-family: "Noto Sans JP", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, メイリオ, Meiryo, sans-serif;
+      font-size: 2.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+.section-name{
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+#page-name{
+    margin-top: 7vh;
+}
+
+#page-name span{
+    border-bottom: double 6px rgb(9, 182, 144);
+}
+
+#name{
+    margin-bottom: 2rem;
+}
+
+
+#logo{
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border-radius: 50%;
+    background-size: cover;
+    margin-top: 15%;
+}
+
+#description{
+    text-align: center;
+    padding:0 3rem;
+    line-height: 1.58;
+}
+
+#qualification{
+    text-align: center;
+}
+
+#qualification li{
+    text-align: center;
+}
+
+#tools-languages{
+    font-size: 4rem;
+}
+
+#ability{
+    margin-bottom: 4rem;
+}
+
+.my-ability{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    clear: both;
+    background-color: #00CCCD;
+    height: 120px;
+  }
+
+  footer #github_link::before{
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f09b';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #F4F6F7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .sns_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+  
+  .link_icon{
+    margin: 2rem 3rem;
+  }
+  
+  #twitter_link::before{
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f099';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #F4F6F7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  

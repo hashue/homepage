@@ -17,9 +17,20 @@ body{
 
 footer{
   clear: both;
-  background-color: #000;
+  background-color: #00CCCD;
   width: 100%;
   height: 120px;
+}
+
+footer #github_link::before{
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  content: '\f09b';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #F4F6F7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -33,6 +44,19 @@ footer{
   top: 0;
   right: 0;
 }
+
+.about_me{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 700px;
+  border: solid 2px #000;
+  text-align: left;
+  grid-template-columns: 150px auto;
+}
+
+
 
 .nav_container .l_nav{
   width: 100%;
@@ -128,20 +152,43 @@ h2{
   font-size: 25px;
 }
 
+#my_explain{
+  font-size:.95rem;
+  letter-spacing: .15rem;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
 
 
 
 
 @media screen and (max-width: 1199px){
 
+  .nav_container{
+    display: none;
+  }
+
+  .about_me{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    max-width: 700px;
+    border: solid 2px #000;
+    grid-template-columns: 150px auto;
+    display: none;
+  }
+
   .back_main{
     width: 100%;
-    height: 60%;
+    height: auto;
     position: relative;
   }
 
   .back_main img{
     width: 100%;
+    height: 120%;
   }
 
   .back_main .phrase{
@@ -181,7 +228,7 @@ h2{
     font-size: 30px;
   }
 
-  .Profile>.about>#my_logo{
+  #my_logo{
     border: double 5px rgb(231, 165, 104);
     border-radius: 50%;
     width:  90px;
@@ -202,11 +249,13 @@ h2{
   }
 
   .about{
-    text-align: left;
+    display: inline-block;
+    text-align: center;
   }
 
   .Profile{
     width: 80%;
+
   }
   
   #used_tools,#qualification{
@@ -214,16 +263,19 @@ h2{
     font-size: 30px;
     margin-top:15%;
     margin-bottom: 40px;
+    display: none;
   }
 
   .tools_logo{
     list-style-type: none;
     text-align: center;
     padding-bottom: 70px;
+    display: none;
   }
 
   .qualification{
     text-align:center;
+    display: none;
   }
 
   #vim,#github,#code{
@@ -328,18 +380,27 @@ h2{
     margin:.6em 0;
   }
 
-  .twitter{
-    float: right;
-    margin-top: 40px;
-    margin-right: 40px;
+  .sns_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
   }
-
-  .twitter,.twitter>a>svg{
-    width: 24px;
-    height: 24px;
-    color: #fff;
-    background-size: cover;
-  }  
+  
+  .link_icon{
+    margin: .5rem;
+  }
+  
+  #twitter_link::before{
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f099';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #F4F6F7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
   
@@ -353,6 +414,8 @@ h2{
   font-size: 40px;
 }
 
+
+
 .back_main{
   width: 100%;
   position: relative;
@@ -363,6 +426,10 @@ h2{
   left: 0;
   color: #F4F6F7;
   position: absolute;
+}
+
+#m-pro{
+  display: none;
 }
 
 .back_main img{
@@ -469,14 +536,25 @@ a{
 
 }
 
-.Profile>.about>#my_logo{
+.image{
+  float: left;
+  position: relative;
+}
+
+.name h1{
+  font-size: 1.75rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.name #my_logo{
   border: double 5px rgb(231, 165, 104);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 5rem 0 20px 2em;
+  width: 100px;
+  height: 100px;
+  margin: 2rem 0 5px 2em;
   background-size: cover;
-  float: left;
+
 }
 
 .qualification{
@@ -604,20 +682,27 @@ li{
 .pjlayout h3{
   margin:.8em 0;
 }
+.sns_icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
 
-  .twitter>a>svg{
-  color: #fff;
-  width: 24px;
-  height: 24px;
-  background-size: cover;
-  float: right;
-  margin-top: 40px;
-  margin-right: 10%;
+.link_icon{
+  margin: .5rem;
+}
 
-    }
-
-
-
-  }
+#twitter_link::before{
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  content: '\f099';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #F4F6F7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+}
 
  

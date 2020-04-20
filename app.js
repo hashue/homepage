@@ -1,18 +1,19 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var helmet = require('helmet');
+let createError = require('http-errors');
+let express = require('express');
+let path = require('path');
+let cookieParser = require('cookie-parser');
+let logger = require('morgan');
+let helmet = require('helmet');
 
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var countRouter = require('./routes/count')
+let indexRouter = require('./routes/index');
+let countRouter = require('./routes/count');
+let aboutRouter = require('./routes/about');
 
 
 
-var app = express();
+
+let app = express();
 app.use(helmet());
 
 //routeing static file
@@ -29,7 +30,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/count', countRouter)
+app.use('/count', countRouter);
+app.use('/about', aboutRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
