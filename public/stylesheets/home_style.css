@@ -323,26 +323,8 @@ h2{
   #works{
     margin-bottom: 60px;
   }
-  .timer{
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-image: url('../images/timer_sub.png');
-  }
-  
-  .count{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    background-image: url('../images/coming\ soon.png');
-  }
-  
-  .qiita{ 
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
+
+
   
   .pjlayout{
     display: flex;
@@ -631,27 +613,6 @@ li{
   text-align: center;
   margin-bottom: 70px;
 }
-
-.timer{
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-image: url('../images/timer_sub.png');
-}
-
-.count{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background-image: url('../images/coming\ soon.png');
-}
-
-.qiita{
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-}
-
 
 .pjlayout{
   margin-right: auto;
