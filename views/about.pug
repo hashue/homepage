@@ -5,25 +5,58 @@ head
         link(rel="shortcut icon", href="../images/ロゴ.ico", type="image/x-icon")
         link( href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet")
 body
-        h1(class='section-name' id='page-name') 
-            span About
+    #div(class="st_wrapper")
+        div(class="nav_container")
+            ul(class="l_nav")
+                li(class="nav_item") 
+                    a(href="/")
+                        |Home
+        div(id='background')
+            div(class='back-text')
+                h1 About Me
+
         img( id="logo" src="../images/ロゴ.png", alt="")
-        h1(id='name' class='section-name') はす
+        h1(id='name' )  はす
         p(id='description')
             |PCが好きな高校生。小学一年生のときにPCを初めて触り興味を持つ。
             |その後小学五年生のときにプログラミングに出会い学習を開始。
-            |趣味はエレキギターを弾くこと。
-            |自分の経験や考え方を共有することで誰かの支えや後押しができるようなコンテンツを作るために学習中。
+            |現在はWeb制作を中心に学習中
+        section(id='skills')
+            h1(class='section-name') Skills
 
-        h1(id='qualification_section' class='section-name') 資格
-        ul(id="qualification")
-            li ITパスポート試験　令和元年10月15日合格
+            h3(class='section_skill') 言語
 
-        h1(id='skill' class='section-name') できること
-        ul(id='ability')
-            li(class='my-ability') HTML,CSS,JavaScriptを用いたwebデザイン
-            li(class='my-ability') Node.jsを用いたサーバーサイド開発
+            p
+                br 
+                |HTML : このサイトを0から構築できる技術力 
+                br
+                |CSS  : このサイトを0から構築できる技術力 
+                br
+                |JavaScript : タイマーアプリや、Chrome拡張機能を開発できる技術力
+                br
+            h3(class='section_skill') ツール 
+            p
+                br
+                |Vim : 主に開発に使用。 
+                br
+                |Adobe XD : Webデザインラフ等に使用
+        
 
+        section(id='history')
+            h1(class='section_title') 主な経歴
+            ul(id='history_ul')
+                li(class='history_item') 
+                    p 2010年
+                      | 初めてPC(Windows2000)に触れる
+                li(class='history_item') 
+                    p 2015年
+                      | プログラミングに出会う
+                li(class='history_item') 
+                    p 2019年 7月
+                      | N高等学校に転入学
+                li(class='history_item') 
+                    p 2019年 10月
+                      | ITパスポート試験 合格
         footer
             ul(class="sns_icon")
                 li(class= 'link_icon')

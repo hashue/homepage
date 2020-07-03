@@ -1,0 +1,42 @@
+footer{
+    $Base_color : #44DFE7;
+    width: 100%;
+    clear: both;
+    background-color:$Base_color;
+    height: 120px;
+    position: absolute;
+    #github_link::before{
+        display: inline-block;
+        font-family: "Font Awesome 5 Brands";
+        content: '\f09b';
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #F4F6F7;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+  }
+
+
+  .sns_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .link_icon{
+        margin: 2rem 3rem;
+      }
+  }
+  
+
+  
+  #twitter_link::before{
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f099';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #F4F6F7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

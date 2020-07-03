@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.nav_container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #44DFE7;
+  color: #222042;
+  z-index: 100;
+}
+
+.nav_container .l_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav_container .l_nav .nav_item {
+  display: inline-block;
+  margin: 2vh 2vw;
+  text-decoration: none;
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+.nav_container .l_nav .nav_item a {
+  color: #222042;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  clear: both;
+  background-color: #44DFE7;
+  height: 120px;
+  position: absolute;
+}
+
+footer #github_link::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  content: '\f09b';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #F4F6F7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sns_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sns_icon .link_icon {
+  margin: 2rem 3rem;
+}
+
+#twitter_link::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  content: '\f099';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #F4F6F7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, メイリオ, Meiryo, sans-serif;
+  line-height: 1.58em;
+  color: #222042;
+}
+
+li {
+  list-style: none;
+}
+
+.section-name {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#page-name {
+  margin-top: 15vh;
+}
+
+#page-name span {
+  border-bottom: solid 6px #D62B64;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30px;
+}
+
+.products .tumb {
+  float: left;
+  margin: 0 12px;
+}
+
+.products .tumb img {
+  width: 300px;
+  height: 160px;
+  margin-top: 50px;
+  background-size: cover;
+  border: solid 4px #222042;
+  -webkit-box-shadow: 0px 5px 16px  #e0eded;
+          box-shadow: 0px 5px 16px  #e0eded;
+}
+
+.products .tumb:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
+}
+
+.products #more {
+  background-color: #fff;
+  width: 300px;
+  height: 160px;
+  margin-top: 50px;
+  border: solid 4px #222042;
+  position: relative;
+}
+
+.products #more a {
+  position: relative;
+  color: #222042;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: calc(50% - (160px / 2));
+  font-size: 2rem;
+}
+/*# sourceMappingURL=work_style.css.map */
