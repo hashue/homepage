@@ -2,11 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .nav_container {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  background-color: #44DFE7;
-  color: #222042;
   z-index: 100;
 }
 
@@ -118,6 +116,7 @@ li {
   width: 100%;
   position: absolute;
   text-align: center;
+  z-index: 20;
 }
 
 .section-name {
@@ -172,18 +171,16 @@ li {
 
 #history_ul {
   display: block;
-  width: 550px;
   text-align: left;
   margin: 4rem auto;
+  width: 750px;
 }
 
 #history_ul .history_item {
-  margin: 1.2rem 0;
   font-size: 1.1rem;
 }
 
 #name {
-  margin: 5vh 0;
   text-align: center;
 }
 
@@ -198,7 +195,7 @@ li {
   margin-top: 10vh;
 }
 
-#description {
+.description {
   text-align: left;
   line-height: 2.333;
   font-size: 1rem;
@@ -209,17 +206,29 @@ li {
 
 #skills > p {
   text-align: left;
-  line-height: 2.333;
-  font-size: 1rem;
 }
 
-.section_skill {
-  margin-top: 2rem;
+#section_skill {
   text-align: center;
 }
 
 #skills {
-  width: 550px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .description {
+    width: 750px;
+    line-height: 2.333;
+    font-size: 2.3rem;
+  }
+  .section_title {
+    margin: 5rem 0;
+    font-size: 3rem;
+  }
+  .back-text {
+    font-size: 2rem;
+    padding-top: 5vh;
+  }
 }
 /*# sourceMappingURL=about_style.css.map */

@@ -16,17 +16,17 @@ body
                 h1 About Me
 
         img( id="logo" src="../images/ロゴ.png", alt="")
-        h1(id='name' )  はす
-        p(id='description')
+        h1(id='name' class='section_title' )  はす
+        p(class='description')
             |PCが好きな高校生。小学一年生のときにPCを初めて触り興味を持つ。
             |その後小学五年生のときにプログラミングに出会い学習を開始。
             |現在はWeb制作を中心に学習中
         section(id='skills')
-            h1(class='section-name') Skills
+            h1(class='section_title' id='section_skill') Skills
 
-            h3(class='section_skill') 言語
+            h3(class='section_title') 言語
 
-            p
+            p(class='description')
                 br 
                 |HTML : このサイトを0から構築できる技術力 
                 br
@@ -34,8 +34,9 @@ body
                 br
                 |JavaScript : タイマーアプリや、Chrome拡張機能を開発できる技術力
                 br
-            h3(class='section_skill') ツール 
-            p
+            h3(class='section_title') ツール 
+            p(class='description')
+
                 br
                 |Vim : 主に開発に使用。 
                 br
@@ -46,16 +47,16 @@ body
             h1(class='section_title') 主な経歴
             ul(id='history_ul')
                 li(class='history_item') 
-                    p 2010年
+                    p(class='description') 2010年
                       | 初めてPC(Windows2000)に触れる
                 li(class='history_item') 
-                    p 2015年
+                    p(class='description') 2015年
                       | プログラミングに出会う
                 li(class='history_item') 
-                    p 2019年 7月
+                    p(class='description') 2019年 7月
                       | N高等学校に転入学
                 li(class='history_item') 
-                    p 2019年 10月
+                    p(class='description') 2019年 10月
                       | ITパスポート試験 合格
         footer
             ul(class="sns_icon")

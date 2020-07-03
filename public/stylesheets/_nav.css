@@ -1,10 +1,8 @@
 .nav_container {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  background-color: #44DFE7;
-  color: #222042;
   z-index: 100;
 }
 
