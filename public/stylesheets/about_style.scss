@@ -11,7 +11,7 @@
 
 body{  
       font-family: "Noto Sans JP", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, メイリオ, Meiryo, sans-serif;
-      line-height: 1.33em;
+      line-height: 1.33rem;
       color: #222042;
 }
 
@@ -120,11 +120,9 @@ float: left;
 
 .description{
     text-align: left;
-    line-height: 2.333;
     font-size: 1rem;
-   width:550px ;
+    width:550px;
     margin: 0 auto;
-    line-height: 1.58em;
 } 
  #skills>p{ 
      text-align: left; 

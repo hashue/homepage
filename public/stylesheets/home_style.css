@@ -83,6 +83,7 @@ body{
 
 #work{
 max-width: 1400px;
+width: 1400px;
 margin: 0 auto;
 padding-bottom: 5rem;
 }
@@ -94,7 +95,7 @@ padding-bottom: 5rem;
 
 #work_btn{
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 12vh auto;
 }
 
 .more{
@@ -126,8 +127,12 @@ padding-bottom: 5rem;
   }
 }
 .project{
-  width: 100%;
-  margin: 12vh 0;
+  width: 90%;
+  margin: 12vh ;
+  border-radius: 4px;
+  padding:2.1rem;
+  /* box-shadow: 5px 5px 4px #dffdff; */
+  box-shadow: 0 0 16px #cce4e6;
 }
 
 
@@ -148,7 +153,7 @@ padding-bottom: 5rem;
   }
 .title{
   margin-top: 7vh;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .back-text p{
