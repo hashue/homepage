@@ -9,7 +9,6 @@ let helmet = require('helmet');
 let indexRouter = require('./routes/index');
 let WorksRouter = require('./routes/Works');
 let aboutRouter = require('./routes/about');
-let pj01Router  = require('./routes/pj01');
 
 
 
@@ -33,7 +32,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/works', WorksRouter);
 app.use('/about', aboutRouter);
-app.use('/pj01',pj01Router);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

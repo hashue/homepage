@@ -1,0 +1,50 @@
+footer {
+  width: 100%;
+  clear: both;
+  background-color: #44DFE7;
+  height: 120px;
+  // position: absolute;
+  bottom: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer #github_link::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  content: '\f09b';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #14141a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer .sns_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .sns_icon .link_icon {
+  margin: 2rem 3rem;
+}
+
+footer #twitter_link::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  content: '\f099';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #14141a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer #copy {
+  text-align: center;
+}
+
+
